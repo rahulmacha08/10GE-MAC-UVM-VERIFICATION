@@ -158,15 +158,34 @@ vsim -do run.do
 
 ## Results
 
-<!-- TODO: paste the UVM report summary and coverage numbers after a clean run -->
+### Code coverage (baseline)
+
+Questa code coverage after the initial runs (report: `results/final_report.txt`). This is a baseline, not a final figure. <!-- TODO: state which tests produced it, and whether runs were merged -->
+
+| Metric | Covered | Hits / Active |
+|---|---|---|
+| Statements | 55.95 % | 587 / 1049 |
+| Branches | 29.07 % | 239 / 822 |
+| FEC conditions | 16.57 % | 30 / 181 |
+| FEC expressions | 92.26 % | 1598 / 1732 |
+| FSM states | 85.71 % | 6 / 7 |
+| FSM transitions | 50.00 % | 8 / 16 |
+| Toggle | 80.51 % | 5976 / 7422 |
+| **Total (code coverage only)** | **57.04 %** | 22 files |
+
+Most of the misses are paths the current tests do not reach: fault handling (fault inputs are tied to 0), FIFO-full and underflow cases, reset in the middle of a frame, and a small set of frame sizes. The planned tests target these, and the coverage report will be rerun after each step. Unreachable code will be excluded with a written reason.
+
+Functional coverage (covergroups): TODO %
+
+### Test results
+
+<!-- TODO: paste the UVM report summary after a clean run -->
 
 | Test | Result | Notes |
 |---|---|---|
 | `test` | TODO | |
 | `ethernet_runt_test` | TODO | |
 | `ethernet_jumbo_test` | TODO | |
-
-Functional coverage: TODO %
 
 <!-- TODO: add docs/waveforms/first_frame.png: first XGMII frame (start FB, preamble, SFD, data) -->
 
