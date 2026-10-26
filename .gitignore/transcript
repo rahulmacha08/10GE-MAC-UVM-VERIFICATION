@@ -1,0 +1,61 @@
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is macha@RAHULMACHA.
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 11:04:37 on Oct 26,2026
+# vlog -reportprogress 300 design.v ethernet_top.sv "+acc" "+cover" -coveropt 3 -sv "+incdir+C:/questasim64_10.7/verilog_src/uvm-1.1d/src" "+incdir+." 
+# -- Compiling module generic_fifo_ctrl
+# -- Compiling module generic_mem_medium
+# -- Compiling module generic_mem_small
+# -- Compiling module generic_fifo
+# -- Compiling module tx_data_fifo
+# ** Warning: ** while parsing file included at design.v(2)
+# ** while parsing file included at tx_hold_fifo.v(40)
+# ** while parsing file included at generic_fifo.v(3)
+# ** at generic_fifo_ctrl.v(2): (vlog-2275) 'generic_fifo_ctrl' already exists and will be overwritten.
+# -- Compiling module generic_fifo_ctrl
+# ** Warning: ** while parsing file included at design.v(2)
+# ** while parsing file included at tx_hold_fifo.v(40)
+# ** while parsing file included at generic_fifo.v(4)
+# ** at generic_mem_medium.v(4): (vlog-2275) 'generic_mem_medium' already exists and will be overwritten.
+# -- Compiling module generic_mem_medium
+# ** Warning: ** while parsing file included at design.v(2)
+# ** while parsing file included at tx_hold_fifo.v(40)
+# ** while parsing file included at generic_fifo.v(5)
+# ** at generic_mem_small.v(2): (vlog-2275) 'generic_mem_small' already exists and will be overwritten.
+# -- Compiling module generic_mem_small
+# ** Warning: ** while parsing file included at design.v(2)
+# ** while parsing file included at tx_hold_fifo.v(40)
+# ** at generic_fifo.v(7): (vlog-2275) 'generic_fifo' already exists and will be overwritten.
+# -- Compiling module generic_fifo
+# -- Compiling module tx_hold_fifo
+# -- Compiling module tx_enqueue
+# -- Compiling module tx_dequeue
+# -- Compiling module xgmii
+# ** Note: (vlog-2286) ethernet_top.sv(3): Using implicit +incdir+C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package ethernet_top_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling module assertions
+# -- Compiling module xge_mac
+# -- Compiling interface ether_interface
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 11:04:38 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
