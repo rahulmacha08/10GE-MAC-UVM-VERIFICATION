@@ -9,7 +9,7 @@ class jumbo_test extends ethernet_base_test;
 
 	  task run_phase(uvm_phase phase);
 	  eth_seq = ether_sequence ::type_id :: create("eth_seq");
-	  tx_cfg.frame_typ = 1580;
+	  tx_cfg.frame_data = 1580;
 	  phase.raise_objection(this);
 	  repeat(1)begin
 	 // tx_cfg.frame_data =0;  // its because if its zero then only it will randomize
